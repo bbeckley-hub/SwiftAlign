@@ -1,0 +1,5 @@
+*.fasta.aligned.fasta
+chunk_*.fasta
+*.log
+__pycache__/
+*.egg-info/

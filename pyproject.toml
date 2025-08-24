@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SwiftAlign"
+version = "1.0"
+description = "Hybrid multiple sequence alignment tool combining MAFFT + MUSCLE"
+authors = [
+    {name = "Beckley Brown", email = "brownbeckley94@gmail.com"}
+]
+requires-python = ">=3.8"
+# Remove static 'scripts' here because setup.py handles it via entry_points
+
+# Optional metadata
+readme = "README.md"
+license = {text = "MIT"}  # or your actual license
+keywords = ["MSA", "MAFFT", "MUSCLE", "bioinformatics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+# DO NOT include dynamic scripts here if you use entry_points in setup.py
+dynamic = []  # Empty or list of fields you really want to be dynamic
+
